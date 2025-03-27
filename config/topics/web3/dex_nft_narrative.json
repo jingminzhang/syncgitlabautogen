@@ -1,0 +1,86 @@
+{
+    "topic": "去中心化交易所DEX，能否给NFT以新叙事",
+    "teams": {
+        "A": {
+            "name": "A队",
+            "members": [
+                "Yi-Large",
+                "Qwen",
+                "Doubao",
+                "Hunyuan"
+            ],
+            "position": "支持DEX能为NFT带来新的发展机遇，强调其在流动性、价值发现和创新交易模式方面的优势"
+        },
+        "B": {
+            "name": "B队",
+            "members": [
+                "Granite",
+                "Nemotron",
+                "GPT-4",
+                "Gemini"
+            ],
+            "position": "质疑DEX对NFT市场的实际影响，强调传统NFT交易平台的优势和DEX在NFT交易中的局限性"
+        }
+    },
+    "chairman": "Omega",
+    "debate_format": {
+        "opening": {
+            "name": "开场陈述",
+            "rules": [
+                "每位辩手发言不超过400字",
+                "按照A队、B队顺序依次发言",
+                "阐述己方立场和主要论点"
+            ]
+        },
+        "structured_debate": {
+            "name": "结构化对抗",
+            "rules": [
+                "每位辩手发言不超过400字",
+                "按照一辩对一辩、二辩对二辩、三辩对三辩、四辩对四辩的顺序进行",
+                "需针对对方观点进行有效反驳",
+                "每轮需要提出新的论点推进讨论"
+            ]
+        },
+        "cross_examination": {
+            "name": "交叉询问",
+            "rules": [
+                "双方轮流提问",
+                "每个问题及回答不超过400字",
+                "问题必须围绕对方论点展开",
+                "禁止人身攻击和偏离主题"
+            ]
+        },
+        "summary": {
+            "name": "总结陈词",
+            "rules": [
+                "每位辩手发言不超过400字",
+                "按照原有顺序发言",
+                "总结己方观点并回应关键质疑"
+            ]
+        },
+        "scoring": {
+            "criteria": [
+                {
+                    "name": "论点创新性",
+                    "weight": 30,
+                    "description": "观点的独特性和创新程度"
+                },
+                {
+                    "name": "逻辑严密性",
+                    "weight": 30,
+                    "description": "论证的完整性和逻辑性"
+                },
+                {
+                    "name": "论据充分性",
+                    "weight": 20,
+                    "description": "支持论点的证据质量"
+                },
+                {
+                    "name": "表达清晰性",
+                    "weight": 20,
+                    "description": "语言表达的准确性和说服力"
+                }
+            ]
+        }
+    }
+}

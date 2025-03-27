@@ -1,0 +1,85 @@
+{
+    "debate_id": "dex_nft_narrative_001",
+    "topic": "去中心化交易所DEX，能否给NFT以新叙事",
+    "timestamp": "2024-01-20T10:00:00Z",
+    "rounds": {
+        "opening": {
+            "A_team": [
+                {
+                    "speaker": "Yi-Large",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "Qwen",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "Doubao",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "Hunyuan",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                }
+            ],
+            "B_team": [
+                {
+                    "speaker": "Granite",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "Nemotron",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "GPT-4",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                },
+                {
+                    "speaker": "Gemini",
+                    "content": "",
+                    "timestamp": "",
+                    "word_count": 0
+                }
+            ]
+        }
+    },
+    "chairman_summary": {
+        "speaker": "Omega",
+        "content": "",
+        "timestamp": "",
+        "key_points": [],
+        "conclusion": "",
+        "winning_team": "",
+        "scores": {
+            "A_team": {
+                "论点创新性": 0,
+                "逻辑严密性": 0,
+                "论据充分性": 0,
+                "表达清晰性": 0,
+                "total": 0
+            },
+            "B_team": {
+                "论点创新性": 0,
+                "逻辑严密性": 0,
+                "论据充分性": 0,
+                "表达清晰性": 0,
+                "total": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,622 @@
+# Use OpenAI compatible models
+models:
+# 0 Deepseek R1 Azure
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: DeepSeek-R1
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Azure
+      price: [0.002, 0.002]
+# 1 Deepseek r1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20250319180824-b8nh9
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 2 Deepseek v3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20250319180913-h2jd4
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 3 deepseek-r1-distill-qwen-7b-250120
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20250319182106-j7jkn
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 4 deepseek-r1-distill-qwen-32b-250120
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20250319182131-wl5nl
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 5 doubao-1-5-pro-32k-character-250228
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20241212211110-9lvqw
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 6 doubao-1-5-pro-32k-250115
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20241212211110-pmgqx
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 7 doubao-lite-32k-240828
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20241212211110-kwrwr
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 8 doubao-vision-pro-32k-241028
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20241217181758-7g5fn
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 9 doubao-1-5-pro-256k-250115
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20250319182700-vnvvz
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 10 doubao-vision-pro-32k-241028
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ep-20241212211110-srk6x
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Doubao
+      price: [0.002, 0.002]
+
+# 11 LITELLM 1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: qwen/qwq-32b:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: qwen
+      price: [0.002, 0.002]
+
+# 12 LITELLM 2
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: rekaai/reka-flash-3:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: rekaai
+      price: [0.002, 0.002]
+
+# 13 LITELLM 3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: groq/deepseek-r1-distill-llama-70b
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: deepseek
+      price: [0.002, 0.002]
+
+# 14 LITELLM 4
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: moonshotai/moonlight-16b-a3b-instruct:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: kimi
+      price: [0.002, 0.002]
+
+# 15 LITELLM 5
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: cognitivecomputations/dolphin3.0-mistral-24b:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: mistral
+      price: [0.002, 0.002]
+
+# 16 LITELLM 6
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: cognitivecomputations/dolphin3.0-r1-mistral-24b:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: mistral
+      price: [0.002, 0.002]
+
+# 17 LITELLM 7
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: google/gemma-3-27b-it:free
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: google
+      price: [0.002, 0.002]
+
+# 18 LITELLM 8
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: gemini/gemini-2.0-flash
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: google
+      price: [0.002, 0.002]
+
+
+# 19 LITELLM 9
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: gemini/gemini-2.0-flash-thinking-exp-01-21
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: google
+      price: [0.002, 0.002]
+
+# 20 LITELLM 10
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: gemini/gemini-2.0-flash-thinking-exp
+      base_url: ${LITELLM_BASE_URL}
+      api_key: ${LITELLM_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: google
+      price: [0.002, 0.002]
+
+
+#21 redteam 1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: glm-4-plus
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: glm
+      price: [0.002, 0.002]
+
+#22 redteam 2
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: qwen-max
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: qwen
+      price: [0.002, 0.002]
+
+#23 redteam 3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: abab6-chat
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: minimax
+      price: [0.002, 0.002]
+
+#24 redteam 4
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: moonshot-v1-128k
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: kimi
+      price: [0.002, 0.002]
+
+#25 redteam 5
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: yi-large
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: 01ww
+      price: [0.002, 0.002]
+
+#26 redteam 6
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: step-v1
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: stepai
+      price: [0.002, 0.002]
+
+#27 redteam 7 metaso
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: research
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: metaso
+      price: [0.002, 0.002]
+
+#28 redteam 8 tencent
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: hunyuan-large
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: tencent
+      price: [0.002, 0.002]
+
+#29 redteam 9 jimeng
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: jimeng
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: bytedance
+      price: [0.002, 0.002]
+
+#30 redteam 10 xunfei
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: SparkDesk-v3.5
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xunfei
+      price: [0.002, 0.002]
+
+#31 redteam 11 japanese
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: rakuten/rakutenai-7b-chat
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: raku
+      price: [0.002, 0.002]
+
+#32 redteam 12 nvda
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: nvidia/nemotron-4-340b-instruct
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: nvda
+      price: [0.002, 0.002]
+
+#33 redteam 13 japanese
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: rakuten/rakutenai-7b-chat
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: raku
+      price: [0.002, 0.002]
+
+#34 redteam 14 ibm
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: ibm/granite-3.0-3b-a800m-instruct
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: ibm
+      price: [0.002, 0.002]
+
+#35 grok 1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: grok-3
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#36 grok 2
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: grok-3-reasoning
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#37 grok 3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: grok-3-search
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#38 grok 4
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: grok-3-imageGen
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#39 grok 5
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: grok-3-deepsearch
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#40 mistral small
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: mistral-small-latest
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: xai
+      price: [0.002, 0.002]
+
+#41 writer 1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: writer/palmyra-fin-70b-32k
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: meta
+
+#42 writer 2
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: writer/palmyra-creative-122b
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: meta
+
+#43 writer 3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: writer/palmyra-med-70b
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: meta
+
+#44 writer 4
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: writer/palmyra-med-70b-32k
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: meta
+
+#45 Github 1
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: gpt-4o-mini
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: OpenAI
+
+#46 Github 2
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: gpt-4o
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: OpenAI
+
+#47 Github 3
+  - provider: autogen_ext.models.openai.OpenAIChatCompletionClient
+    config:
+      model: phi-4
+      base_url: ${VOAPI_BASE_URL}
+      api_key: ${VOAPI_API_KEY}
+      model_info:
+        function_calling: true
+        json_output: false
+        vision: false
+        family: Microsoft
+
+#48 Github 4
+

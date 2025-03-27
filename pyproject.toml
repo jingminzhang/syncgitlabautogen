@@ -1,0 +1,12 @@
+[project]
+name = "autogen-studio"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "autogen>=0.4.9",
+    "autogen-core>=0.4.9,<0.5",
+    "autogen-ext[magentic-one,openai]>=0.4.9,<0.5",
+    "python-dotenv",
+    "pyyaml"
+]

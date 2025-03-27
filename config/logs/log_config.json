@@ -1,0 +1,18 @@
+{
+    "log_format": {
+        "timestamp_format": "ISO8601",
+        "max_word_count": 400,
+        "required_fields": ["speaker", "content", "timestamp", "word_count"],
+        "summary_required_fields": ["key_points", "conclusion", "winning_team", "scores"]
+    },
+    "storage": {
+        "path": "c:\\Users\\locks\\github\\autogen-studio\\config\\logs",
+        "format": "json",
+        "backup": true
+    },
+    "validation_rules": {
+        "word_count_limit": 400,
+        "content_required": true,
+        "timestamp_required": true
+    }
+}

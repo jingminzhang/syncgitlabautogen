@@ -1,0 +1,29 @@
+# 搜索功能配置
+
+# SerpAPI配置
+serpapi:
+  api_key: ${SERPAPI_API_KEY}  # 从环境变量获取API密钥
+  engine: google  # 默认搜索引擎
+  results_limit: 5  # 每次搜索返回的最大结果数
+  language: zh  # 默认搜索语言
+
+# 搜索功能限制
+limits:
+  max_searches_per_round: 3  # 每轮辩论中每个辩手可以使用的最大搜索次数
+  max_tokens_per_search: 1000  # 每次搜索结果的最大token数
+  cache_duration: 3600  # 搜索结果缓存时间（秒）
+
+# 搜索结果处理
+processing:
+  summarize: true  # 是否对搜索结果进行摘要
+  translate: false  # 是否翻译非中文结果
+  fact_check: true  # 是否进行事实核查
+
+# 搜索范围配置
+scope:
+  time_range: last_year  # 搜索时间范围
+  domains:  # 可信域名列表
+    - arxiv.org
+    - github.com
+    - wikipedia.org
+    - scholar.google.com
